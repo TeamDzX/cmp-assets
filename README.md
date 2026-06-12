@@ -8,7 +8,7 @@ Generated visual assets for the **Business Dashboard** landing page
 - The landing page hot-links them via
   `https://raw.githubusercontent.com/TeamDzX/cmp-assets/main/images/<name>.jpg`,
   keeping the Wix HTML embed light.
-- `hero-aurora.jpg` — soft hero backdrop (indigo/violet aurora over ledger grid).
+- `hero-mist.jpg` — faint hero backdrop (one soft indigo/violet watercolour wash).
 - `pack-*.jpg` — square cover art for the document-template pack cards.
 
 To add a pack cover: add an entry to `COVERS` in `gen_images.py`, run it,

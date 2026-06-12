@@ -22,15 +22,15 @@ COVERS = {
  "pack-project-lifecycle":"a circular orbit of small glowing milestone spheres around a bright central core, one arc segment highlighted",
 }
 
-HERO = ("a vast soft abstract gradient field, gentle indigo and violet aurora ribbons flowing "
-        "horizontally across a pale off-white background, faint translucent ledger grid lines "
-        "dissolving into light, premium minimal fintech art, very light and airy, lots of negative space, "
-        "no text, no letters, no numbers, no people, no watermark")
+HERO = ("an extremely minimal abstract backdrop, one single very soft out-of-focus wash of pale "
+        "indigo and violet light drifting across a near-white background, like watercolour mist, "
+        "no lines, no grid, no shapes with edges, almost empty, vast negative space, serene and airy, "
+        "premium minimal, no text, no letters, no numbers, no people, no watermark")
 
 def main():
     here = os.path.dirname(os.path.abspath(__file__))
     img = lambda n: os.path.join(here, "images", n + ".jpg")
-    generate(img("hero-aurora"), HERO, seed=101, width=1216, height=832)
+    generate(img("hero-mist"), HERO, seed=117, width=1216, height=832)
     for i, (name, prompt) in enumerate(COVERS.items()):
         generate(img(name), prompt + STYLE, seed=201 + i, width=1024, height=1024, max_px=640)
 
